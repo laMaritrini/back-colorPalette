@@ -5,7 +5,7 @@ import {
     createPalette,
     deletePalette,
     getAllPalettes,
-} from '../controllers/palette-controller';
+} from '../controllers/palette-controller.js';
 
 router.get('/', getAllPalettes);
 router.post('/', createPalette);

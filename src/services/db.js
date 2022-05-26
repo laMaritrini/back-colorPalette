@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv';
 dotenv.config();
 import mongoose from 'mongoose';
-import { Palette } from '../models/palette-model.js';
+import { Palette } from '../models/Palette-model.js';
 
 export async function mongoConnect() {
     const user = process.env.DBUSER;

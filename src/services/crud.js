@@ -1,4 +1,4 @@
-import { Palette } from '../models/palette-model.js';
+import { Palette } from '../models/Palette-model.js';
 
 export async function createPalette(body, Palette) {
     const newPalette = await Palette.create(body);
