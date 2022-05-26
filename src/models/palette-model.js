@@ -11,27 +11,27 @@ const paletteSchema = new mongoose.Schema({
             color1: {
                 type: String,
                 required: true,
-                unique: false,
+                unique: true,
             },
             color2: {
                 type: String,
                 required: true,
-                unique: false,
+                unique: true,
             },
             color3: {
                 type: String,
                 required: true,
-                unique: false,
+                unique: true,
             },
             color4: {
                 type: String,
                 required: true,
-                unique: false,
+                unique: true,
             },
             color5: {
                 type: String,
                 required: true,
-                unique: false,
+                unique: true,
             },
         },
     ],
