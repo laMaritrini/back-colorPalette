@@ -3,6 +3,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import * as dotenv from 'dotenv';
 import { mongoConnect } from './src/services/db.js';
+import paletteRouter from './src/routes/palette-router.js';
 
 dotenv.config();
 export const app = express();
@@ -13,6 +14,8 @@ mongoConnect();
 app.use(express.json());
 app.use(morgan('dev'));
 app.use(cors());
+
+app.use('/palettes', paletteRouter);
 
 app.use((err, req, resp, next) => {
     resp.status(err.status);

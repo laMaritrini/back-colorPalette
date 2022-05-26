@@ -1,3 +1,3 @@
 ### Silvia Ferrai
 
-## Back-end project Oxygen
+## Back-end project color palette
